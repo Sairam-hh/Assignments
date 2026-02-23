@@ -1,0 +1,109 @@
+
+body{
+    background-color: #f4f4f4;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #333;
+    color: white;
+    top: 0px;
+    position: sticky;
+}
+.menu{
+    display: flex;
+    gap: 15px;
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+.hero{
+    background:#595757 ;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+}
+.hero-content{
+    text-align: center;
+    padding: 0px;
+}
+.hero button{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius:8px;
+    cursor: pointer;
+    
+}
+.about{
+    padding: 40px;
+}
+.about-container{
+    display: flex;
+    gap: 40px;
+    flex: 1;
+}
+
+.about-image{
+    background: #ababab;
+    width: 50%;
+    height: 150px;   
+}
+.about-text{
+    width: 50%;
+}
+.services-section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.box{
+    background: whitesmoke;
+    /* flex: 1 ; */
+    padding: 20px;
+    border:1px solid #ddd;
+    border-radius: 8px;
+    width: 265px;
+}
+.big-box{
+    background: whitesmoke;
+    /* flex: 1 ; */
+    padding: 20px;
+    border:1px solid #ddd;
+    border-radius: 8px;
+    width: 590px;
+}
+.Testimonials-box{
+    display: flex;
+    flex: 1;
+    background: whitesmoke;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+.contact{
+    display: flex;
+    gap: 20px;
+}
+.contact button{
+    background: black;
+    color: white;
+    padding: 10px;
+    width: 170px;  
+}
+.ft{
+    background: #333;
+    color: white;
+    font-size: 10px;
+    padding: 8px;
+    text-align: center;
+}
