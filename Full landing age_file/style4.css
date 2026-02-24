@@ -68,7 +68,7 @@ body{
 }
 .box{
     background: whitesmoke;
-    /* flex: 1 ; */
+    
     padding: 20px;
     border:1px solid #ddd;
     border-radius: 8px;
@@ -93,6 +93,15 @@ body{
 .contact{
     display: flex;
     gap: 20px;
+    /* flex: 1; */
+}
+.last-box{
+    background: whitesmoke;
+    
+    padding: 20px;
+    border:1px solid #ddd;
+    border-radius: 8px;
+    width: 1100px;
 }
 .contact button{
     background: black;
