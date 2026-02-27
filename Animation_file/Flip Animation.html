@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip Animation</title>
+    <style>
+        body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: whitesmoke;
+}
+
+.card {
+    width: 250px;
+    height: 250px;
+    perspective: 1000px;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: flip 4s infinite ease-in-out;
+}
+
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    border-radius: 10px;
+}
+
+.front {
+    background: crimson;
+}
+
+.back {
+    background: royalblue;
+    transform: rotateY(180deg);
+}
+
+@keyframes flip {
+    0%   { transform: rotateY(0deg); }
+    45%  { transform: rotateY(0deg); }
+    50%  { transform: rotateY(180deg); }
+    95%  { transform: rotateY(180deg); }
+    100% { transform: rotateY(0deg); }
+}
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Auto Flip Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+    <div class="card-inner">
+        <div class="front">FRONT</div>
+        <div class="back">BACK</div>
+    </div>
+</div>
+
+</body>
+</html>
+</body>
+</html>
